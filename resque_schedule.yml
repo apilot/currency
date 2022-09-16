@@ -1,0 +1,5 @@
+real_currency_start:
+  cron: "*/5 * * * *"
+  queue: updater_worker_queue_static
+  custom_job_class: "UpdaterStatic"
+  args: {currency: 33}

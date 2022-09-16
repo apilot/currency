@@ -1,0 +1,31 @@
+---
+ru:
+  admin:
+    currency:
+      date_to: Был изменен до
+      description: Вы можете заморозить курс на некоторое время
+      form_title: Изменение курса
+      last_course: Последний введенный курс
+    form:
+      Form_for_change_course: Форма для изменения курса
+      change_course: Изменить курс
+      course: Курс
+      date_to: Изменить до (GMT+3)
+    setting:
+      create_course:
+        course_added: Курс добавлен
+  layouts:
+    admin:
+      admin_currency: Изменение курса
+    parts:
+      footer:
+        company_name: Наименование компании
+      header:
+        admin: Администрирование
+        currency_stimulus: Курс валют
+  pages:
+    course:
+      dinamic_updated: Динамически обновляемый
+    stimulus:
+      static_data: Статичные данные
+      updated_by_hotwire: Обновлено с помощью Hotwire

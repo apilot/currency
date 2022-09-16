@@ -1,0 +1,9 @@
+<%=  t(".Form_for_change_course") %>
+
+<%= simple_form_for(:setting, method: :post, url: admin_path) do |f| %>
+  <%= f.label :course, t('.course') %>
+  <%= f.input  :course, label: false , input_html: { value: @course }%>
+  <%= f.label :date_to, t('.date_to') %>
+  <%= f.input  :date_to, label: false , as: :datetime, html5: true, input_html: { value: @date_to&.strftime("%Y-%m-%dT%k:%M")}%>
+  <%= f.button :submit, t('.change_course') %>
+<% end %>

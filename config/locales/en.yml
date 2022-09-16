@@ -1,0 +1,31 @@
+---
+en:
+  admin:
+    currency:
+      date_to: Date to
+      description: You can change currency course
+      form_title: Change course
+      last_course: Last course
+    form:
+      Form_for_change_course: Form for change course
+      change_course: Change course
+      course: Course
+      date_to: Date to
+    setting:
+      create_course:
+        course_added: Course added
+  layouts:
+    admin:
+      admin_currency: Admin currency
+    parts:
+      footer:
+        company_name: Company name
+      header:
+        admin: Administration
+        currency_stimulus: Currency on stimulus
+  pages:
+    course:
+      dinamic_updated: Dinamic updated
+    stimulus:
+      static_data: Static data
+      updated_by_hotwire: Updated by hotwire

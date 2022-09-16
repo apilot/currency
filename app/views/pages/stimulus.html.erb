@@ -1,0 +1,9 @@
+<%= t(".updated_by_hotwire") %>
+<hr>
+<%= t(".static_data") %>: <%= @currency %>
+<hr>
+<%= turbo_stream_from("currency_course") %>
+  <%= turbo_frame_tag 'currency' do %>
+    <%= render partial: "pages/course", locals: {currency: @currency, target_name: "currence"} %>
+  <% end %>
+

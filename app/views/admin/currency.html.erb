@@ -1,0 +1,7 @@
+<h1><%= t('.form_title') %></h1>
+<p><%= t('.description') %></p>
+<hr>
+<%= t('.last_course') %>: <span><%= @course %></span><br>
+<%= t('.date_to') %>: <span><%= @date_to %></span><br>
+<hr>
+<%= render "form", course: @course, date_to: @date_to %>

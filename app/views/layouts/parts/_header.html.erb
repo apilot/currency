@@ -1,0 +1,10 @@
+<header class="p-3 <%= current_page?(:admin) ? 'bg-dark bg-gradient' : 'text-bg-dark' %>">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <%= active_link_to t('.currency_stimulus'), root_path, active: :exclusive, wrap_tag: :li, wrap_class: 'nav-item', class: "nav-link px-2" %>
+        <%= active_link_to t('.admin'), admin_path, wrap_tag: :li, wrap_class: 'nav-item', class: "nav-link px-2" %>
+      </ul>
+    </div>
+  </div>
+</header>

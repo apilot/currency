@@ -1,0 +1,10 @@
+.nav-item a {
+  color: gray;
+}
+
+.nav-item a:hover {
+  color: lightgray;
+}
+.active a {
+  color: white;
+}
