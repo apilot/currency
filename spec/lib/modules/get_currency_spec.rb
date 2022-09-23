@@ -1,9 +1,11 @@
-RSpec.describe "GetCurrency" do
-  let(:uri) { URI('https://test.com/return_json/reviews.json') }
-  let(:data) { {"reviews" => [{"Valute" => { "USD" => {"value" => 60.2 } }, "data2"=> "2"}]} }
-  require_relative "../../../lib/modules/get_currency"
-  it "return data from url" do
-    data = GetCurrency.get_course
-    data
+require "spec_helper"
+RSpec.describe Modules::GetCurrency do
+  specify "#get_course" do
+    course = instance_double Modules::GetCurrency
+    allow(course).to receive(:get_course).and_return(66)
+    expect(course.get_course).to eq(66)
+  end
+  specify "#connect_and_get" do
+    expect(Modules::GetCurrency.send(:connect_and_get)).to match(/USD/)
   end
 end

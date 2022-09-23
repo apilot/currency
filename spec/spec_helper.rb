@@ -1,4 +1,5 @@
 RSpec.configure do |config|
+  require_relative "../lib/modules/get_currency"
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
